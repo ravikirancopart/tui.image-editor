@@ -270,7 +270,7 @@ function calculateDimensionLeftTopEdge(
  * @returns {Object}
  */
 export function makeFillPatternForFilter(canvasImage, filterOption, patternSourceCanvas) {
-  const copiedCanvasElement = getCachedCanvasImageElement(canvasImage);
+  const copiedCanvasElement = getCachedCanvasImageElement(canvasImage, true);
   const fillImage = makeFillImage(copiedCanvasElement, canvasImage.angle, filterOption);
   patternSourceCanvas.add(fillImage);
 

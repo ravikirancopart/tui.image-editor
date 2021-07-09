@@ -15958,7 +15958,7 @@ function calculateDimensionLeftTopEdge(overflowAreaPositionFixer, _ref4) {
  * @returns {Object}
  */
 function makeFillPatternForFilter(canvasImage, filterOption, patternSourceCanvas) {
-  var copiedCanvasElement = getCachedCanvasImageElement(canvasImage);
+  var copiedCanvasElement = getCachedCanvasImageElement(canvasImage, true);
   var fillImage = makeFillImage(copiedCanvasElement, canvasImage.angle, filterOption);
   patternSourceCanvas.add(fillImage);
 
